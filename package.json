@@ -4,5 +4,9 @@
   "description": "A React frontend for tic-tac-toe-service",
   "main": "index.js",
   "author": "Cyrus Vandrevala",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "webpack": "^2.2.1"
+  }
 }
