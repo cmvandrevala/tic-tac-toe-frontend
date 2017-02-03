@@ -1,1 +1,1 @@
-console.log("this is magic!");
+console.log("This is magic!");
