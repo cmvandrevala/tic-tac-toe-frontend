@@ -1,7 +1,9 @@
+var foo = require("tic_tac_toe/foo.js")
+
 describe("A random test to see if the system works", function() {
 
-  it("true is true", function() {
-    expect(true).toBe(true);
+  it("imports foo", function() {
+    expect(foo).toEqual("bar")
   });
 
 });

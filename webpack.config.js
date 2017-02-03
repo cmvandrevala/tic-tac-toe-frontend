@@ -11,5 +11,10 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: path.join(__dirname, "index.ejs")
     })
-  ]
+  ],
+  resolve: {
+    alias: {
+      "tic_tac_toe": path.join(__dirname, "src", "tic_tac_toe")
+    }
+  }
 }

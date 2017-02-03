@@ -1,4 +1,5 @@
 var webpack = require('karma-webpack')
+var path = require('path')
 
 module.exports = function(config) {
   config.set({
@@ -27,11 +28,11 @@ module.exports = function(config) {
     singleRun: true,
 
     webpack: {
-      // karma watches the spec entry points
-      // (you don't need to specify the entry option)
-      // webpack watches dependencies
-
-      // webpack configuration
+      resolve: {
+        alias: {
+          "tic_tac_toe": path.join(__dirname, "src", "tic_tac_toe")
+        }
+      }
     },
 
     webpackMiddleware: {
